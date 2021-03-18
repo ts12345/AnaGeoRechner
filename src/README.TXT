@@ -6,7 +6,7 @@ alles, was er/sie wissen muss. Üblicherweise sollte der Kommentar
 zumindest die folgenden Angaben umfassen:
 ------------------------------------------------------------------------
 
-PROJEKTBEZEICHNUNG:
+PROJEKTBEZEICHNUNG: AnaGeoRechner
 PROJEKTZWECK:
 VERSION oder DATUM:
 WIE IST DAS PROJEKT ZU STARTEN:
