@@ -55,6 +55,7 @@ class Vector
         return l;
     }
 
+    
     double winkelZu(Vector v) {
         double phi = Math.acos(dotProduct(this, v)/(this.length() * v.length()))/Math.PI*180;
         return phi;   
