@@ -30,11 +30,12 @@ class Point
         return 0;
     }
 
-    double distanceTo(Point p) {
+     double distanceTo(Point p) {
         double dx = p.x - x;
         double dy = p.y - y;
         double dz = p.z - z;
         return Math.sqrt(dx*dx + dy*dy + dz*dz);
     }
 
+         
 }
