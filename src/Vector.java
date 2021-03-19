@@ -71,5 +71,12 @@ class Vector
         double phi = Math.acos(dotProduct(this, v)/(this.length() * v.length()))/Math.PI*180;
         return phi;   
     }
-
+    
+    Vector plus(Vector w) {
+        x = x + w.x;
+        y = y + w.y;
+        z = z + w.z;
+                
+        return new Vector(x, y, z);
+    }
 }
