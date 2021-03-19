@@ -7,14 +7,20 @@ public class Line
     Point A;
     Vector B;
 
-    public Line(Point A, Vector B){
+    Line(Point A, Vector B){
         this.A = A;
         this.B = B;
     }
 
     Point intersects(Line d) {
-
         return null;
     }
+    
+    double distanceTo(Line l) {
+        return 0;
+        // TODO
+    }
+    
+    
     
 }

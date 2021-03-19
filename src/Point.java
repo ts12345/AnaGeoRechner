@@ -17,6 +17,10 @@ class Point
         this.y = y;
         this.z = z;
     }
+    
+    Point(Vector v) {
+        // TODO
+    }
 
     int whichOctant() {
         if(x >= 0 && y >= 0 && z >= 0) return 1;

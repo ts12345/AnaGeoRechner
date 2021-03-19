@@ -20,6 +20,11 @@ class Vector
         y = B.y - A.y;
         z = B.z - A.z;
     }
+    
+    Vector(Point p) {
+        // TODO
+    }
+
 
     static Vector crossProduct(Vector u, Vector v) {
         double x = u.y * v.z - u.z * v.y;
