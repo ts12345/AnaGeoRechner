@@ -60,7 +60,13 @@ class Vector
         return l;
     }
 
-    
+    Vector times (double t) {
+        x = x * t;
+        y = y * t;
+        z = z * t;
+        return new Vector(x, y, z);      
+    }
+
     double winkelZu(Vector v) {
         double phi = Math.acos(dotProduct(this, v)/(this.length() * v.length()))/Math.PI*180;
         return phi;   
