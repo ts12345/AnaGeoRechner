@@ -63,4 +63,18 @@ public class PlaneTest
 
         assertEquals(true, p1.equals(p2));
     }
+
+    @Test
+    public void test_contains() {
+        Vector n = new Vector(1, 1, 1);
+        Vector A = new Vector(2, 0, 0);
+
+        Plane p = new Plane(n, A);
+
+        Point AA = new Point(3, -1, 0);
+        Point BB = new Point(3, -1, 5);
+
+        assertEquals(true, p.contains(AA));
+        assertEquals(false, p.contains(BB));
+    }
 }
