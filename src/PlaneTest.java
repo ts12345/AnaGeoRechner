@@ -76,5 +76,17 @@ public class PlaneTest
 
         assertEquals(true, p.contains(AA));
         assertEquals(false, p.contains(BB));
+        
+        Vector u = new Vector(1, 2, -3);
+        Line l1 = new Line(new Point(A), u);     
+        Line l2 = new Line(new Point(A), n);
+        
+        assertEquals(true, p.contains(l1));
+        assertEquals(false, p.contains(l2));
+        
+        
+        
+        
+        
     }
 }
