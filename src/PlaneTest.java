@@ -76,17 +76,26 @@ public class PlaneTest
 
         assertEquals(true, p.contains(AA));
         assertEquals(false, p.contains(BB));
-        
+
         Vector u = new Vector(1, 2, -3);
         Line l1 = new Line(new Point(A), u);     
         Line l2 = new Line(new Point(A), n);
-        
+
         assertEquals(true, p.contains(l1));
         assertEquals(false, p.contains(l2));
-        
-        
-        
-        
-        
+    }
+
+    @Test
+    public void test_distanceTo() {
+        Vector n = new Vector(1, 1, 1);
+        Vector A = new Vector(2, 0, 0);
+
+        Plane p = new Plane(n, A);
+
+        Point AA = new Point(1, 1, 1);
+        Point BB = new Point(3, 1, 1);
+
+        assertEquals(0, p.distanceTo(AA), 1e-10);
+        assertEquals(2, p.distanceTo(BB), 1e-10); 
     }
 }
