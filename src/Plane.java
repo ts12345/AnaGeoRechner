@@ -54,6 +54,9 @@ class Plane
     boolean contains(Line l) {
         return true;        
     }
-
+    
+    Line intersect(Plane p) {
+        return null;            
+    }
 
 }
