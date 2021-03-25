@@ -1,12 +1,9 @@
 package src;
 
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 
 public class PlaneTest
 {
@@ -36,20 +33,34 @@ public class PlaneTest
     public void tearDown()
     {
     }
-    
+
     @Test
     public void test_ConstruktorPointPointPoint() {
         Vector n = new Vector(1, 1, 1);
         Vector A = new Vector(2, 0, 0);
-        
+
         Plane p1 = new Plane(n, A);
-        
+
         Point AA = new Point(2, 0, 0);
         Point BB = new Point(4, -2, 0);
         Point CC = new Point(3, 1, -2);
-        
+
         Plane p2 = new Plane(AA, BB, CC);
-        
+
+        assertEquals(true, p1.equals(p2));
+    }
+
+    @Test
+    public void test_ConstruktorParametricForm() {
+        Vector n = new Vector(1, 1, 1);
+        Vector A = new Vector(2, 0, 0);
+        Plane p1 = new Plane(n, A);
+
+        Vector u = new Vector(1, -1, 0);
+        Vector v = new Vector(3, 1, -4);
+
+        Plane p2 = new Plane(A, u, v);
+
         assertEquals(true, p1.equals(p2));
     }
 }
