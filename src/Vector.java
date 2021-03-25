@@ -79,4 +79,9 @@ class Vector
                 
         return new Vector(x, y, z);
     }
+    
+    boolean isCollinear(Vector v) {
+        Vector n = crossProduct(this, v);
+        return Double.compare(n.length(), 0) == 0;
+    }
 }

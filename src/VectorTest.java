@@ -84,4 +84,17 @@ public class VectorTest
         assertEquals(90.0, a.winkelZu(d), 1e-8);
     }
 
+    @Test
+    public void test_isCollinear()
+    {
+        Vector a = new Vector(1, 0, 0);
+        Vector b = new Vector(4, -5, 6);
+        Vector c = new Vector(-3, 0, 0);
+        Vector d = new Vector(8, -10, 12);
+
+        assertEquals(false, a.isCollinear(b));
+        assertEquals(true, a.isCollinear(c));
+        assertEquals(true, b.isCollinear(d));
+    }
+
 }
