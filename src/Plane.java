@@ -24,23 +24,23 @@ class Plane
 
         // Kollineare Normalenvektoren?
         boolean collinearNormalvectors = n.isCollinear(p.n);
-        
+
         // A in Plane p?
         boolean planeContainsA = this.contains(new Point(p.A));
-        
+
         return planeContainsA && collinearNormalvectors;
-        
 
     }  
-
     // Ebene durch 3 Punkte A, B, C
     Plane(Point A, Point B, Point C) {
-
-    }
+    
+    
+}
 
     // Ebene in Parameterform X = A + a u +  b v
     Plane(Vector A, Vector u, Vector v) {
-
+        this.A = A;
+        this.n = Vector.crossProduct(u, v);
     }
 
     double distanceTo(Point A) {
@@ -59,7 +59,7 @@ class Plane
     boolean contains(Line l) {
         return true;        
     }
-    
+
     Line intersect(Plane p) {
         return null;            
     }
