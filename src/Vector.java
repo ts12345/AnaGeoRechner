@@ -22,7 +22,9 @@ class Vector
     }
     
     Vector(Point p) {
-        // TODO
+        x = p.x;
+        y = p.y;
+        z = p.z;
     }
 
 

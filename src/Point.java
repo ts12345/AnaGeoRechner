@@ -19,7 +19,9 @@ class Point
     }
     
     Point(Vector v) {
-        // TODO
+        this.x = v.x;
+        this.y = v.y;
+        this.z = v.z;        
     }
 
     int whichOctant() {

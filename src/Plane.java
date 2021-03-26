@@ -26,17 +26,16 @@ class Plane
         boolean collinearNormalvectors = n.isCollinear(p.n);
 
         // A in Plane p?
-        boolean planeContainsA = this.contains(new Point(p.A));
+        Point AA = new Point(p.A);
+        boolean planeContainsA = this.contains(AA);
 
         return planeContainsA && collinearNormalvectors;
 
     }  
     // Ebene durch 3 Punkte A, B, C
     Plane(Point A, Point B, Point C) {
-    
-    
-}
 
+    }
     // Ebene in Parameterform X = A + a u +  b v
     Plane(Vector A, Vector u, Vector v) {
         this.A = A;
