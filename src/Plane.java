@@ -26,7 +26,7 @@ class Plane
         boolean collinearNormalvectors = n.isCollinear(p.n);
         
         // A in Plane p?
-        boolean planeContainsA = p.contains(new Point(p.A));
+        boolean planeContainsA = this.contains(new Point(p.A));
         
         return planeContainsA && collinearNormalvectors;
         
