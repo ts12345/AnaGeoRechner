@@ -47,8 +47,13 @@ class Plane
         return 0;        
     }
 
-    boolean contains(Point A) {
-        return true;        
+    boolean contains(Point B) {
+        double d = Vector.dotProduct(n, A);
+        double e = Vector.dotProduct(n, new Vector(B));
+        if (Double.compare(d, e) == 0) { 
+            return true;}  
+        else {
+            return false;}
     }
 
     boolean contains(Line l) {
