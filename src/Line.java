@@ -21,6 +21,16 @@ public class Line
         // TODO
     }
     
+    // Schnittwinkel mit einer Ebene bestimmen
+    double angleTo(Plane p) {
+        return 0;
+    }
+    
+    // "Schnittwinkel" mit einer anderen Geraden bestimmen
+    double angleTo(Line l) {
+        return 0;
+    }
+    
     
     
 }
